@@ -5,7 +5,7 @@
         <div class="input-group-prepend">
           <span class="input-group-text" id="basic-addon3">Search By Title</span>
         </div>
-        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" [(ngModel)]="email" placeholder="Serach By Title">
+        <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3" [(ngModel)]="title" placeholder="Serach By Title">
       </div>
       <div class="table-responsive">
         <table border="1" width="100%" class="table table-striped">
@@ -15,7 +15,7 @@
             <th>Created At</th>
             <th>Author</th>
           </tr>
-          <tr *ngFor="let post of posts | customerEmailFilter:email;let i = index" (click)=openJsonOnModal(post)>
+          <tr *ngFor="let post of posts | customerTitleFilter:title;let i = index" (click)=openJsonOnModal(post)>
             <td>{{post.title}}</td>
             <td>{{post.url}}</td>
             <td>{{post.created_at|date:'dd/MM/yyyy'}}</td>

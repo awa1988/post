@@ -33,7 +33,7 @@ export class NgbdModalContent {
 
 })
 export class AppComponent implements OnInit {
-  title = 'app';
+  title = '';
   constructor(private postService: PostService, private modalService: NgbModal) {
 
   }

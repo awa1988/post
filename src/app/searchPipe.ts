@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
 @Pipe({
-    name: 'customerEmailFilter'
+    name: 'customerTitleFilter'
 })
 export class SearchPipe implements PipeTransform {
 
